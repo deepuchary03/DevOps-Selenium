@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple JavaScript Program</title>
+  </head>
+  <body>
+    <p id="output">0</p>
+    <button id="increment-button">Increment</button>
+    <script>
+      const output = document.getElementById("output");
+      const incrementButton = document.getElementById("increment-button");
+      let count = 0;
+      incrementButton.addEventListener("click", function () {
+        count += 1;
+        output.innerHTML = count;
+      });
+    </script>
+  </body>
+</html>
